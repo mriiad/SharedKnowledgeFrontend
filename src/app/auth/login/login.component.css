@@ -1,0 +1,75 @@
+.page .container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+  
+
+.left {
+    align-self: center;
+    justify-self: center;
+    padding-right: 10px;
+    margin-top: 300px;
+  }
+
+.welcome-img{
+  height: 200px;
+}
+
+.right {
+    align-self: center;
+    margin-top: 300px;
+  }
+
+.sizedbox {
+  height: 300px;
+}
+
+.login-section{
+    margin-left: 10px;
+}
+
+.login-section .card-body{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-section .card .card-body{
+}
+
+.login-section .label {
+  padding-right: 20px;
+}
+ 
+.login-failed{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    border: 2px solid black;
+    width: 65%;    
+    background-color: red;
+}
+ 
+.login-failed-text{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;    
+    color: aliceblue;
+}
+.login-failed, .register-success{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    border: 2px solid black;
+    width: 65%;    
+    background-color: red;
+}
+
+.login-failed-text, .register-success-text{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;    
+    color: aliceblue;
+}
