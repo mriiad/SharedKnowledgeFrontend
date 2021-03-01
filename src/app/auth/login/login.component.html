@@ -1,5 +1,4 @@
 <div class="page">
-  <div class="container">
     <div class="left">
       <img class="welcome-img" src="https://pngimg.com/uploads/welcome/welcome_PNG81.png" />
     </div>
@@ -13,22 +12,27 @@
             </div>
             <div class="card-body">
               <form [formGroup]="loginForm" (ngSubmit)="login()">
-                <div class="form-group row">
+                <div class="form-group">
                   <label for="user_name" class="label">Username</label>
                   <div>
-                    <input type="text" id="user_name" class="form-control" [formControlName]="'username'" name="user_name"
+                    <div class="login-formfield">
+                      <input type="text" id="user_name" class="form-control" [formControlName]="'username'" name="user_name"
                       required autofocus>
+                    </div>
                     <span *ngIf="!loginForm.get('username').valid && loginForm.get('username').touched" class="help-block">
                       Please provide a valid username
                     </span>
                   </div>
                 </div>
     
-                <div class="form-group row">
+                <div class="form-group">
                   <label for="password" class="label">Password</label>
                   <div>
-                    <input type="password" id="password" class="form-control" [formControlName]="'password'" name="password"
-                      required>
+                    <div class="login-formfield">
+                      <input type="password" id="password" class="form-control" [formControlName]="'password'" name="password"
+                        required>
+                    </div>
+                      
                     <span *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched" class="help-block">
                       Password cannot be empty
                     </span>
@@ -51,5 +55,4 @@
       </div>
     </div>
     </div>
-  </div>
 </div>
