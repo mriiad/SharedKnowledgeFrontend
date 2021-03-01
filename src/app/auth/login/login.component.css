@@ -1,6 +1,6 @@
-.page .container {
-  display: flex;
-  justify-content: space-between;
+.page {
+  display: grid;
+  grid-template-columns: 30% 70%;
   margin: auto;
 }
   
@@ -8,7 +8,6 @@
 .left {
     align-self: center;
     justify-self: center;
-    padding-right: 10px;
     margin-top: 300px;
   }
 
@@ -21,6 +20,9 @@
     margin-top: 300px;
   }
 
+.card {
+  width: 150%;
+}
 .sizedbox {
   height: 300px;
 }
@@ -29,20 +31,20 @@
     margin-left: 10px;
 }
 
-.login-section .card-body{
-  width: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.login-section .card-body .form-group{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: auto;
 }
 
-.login-section .card .card-body{
-}
-
-.login-section .label {
-  padding-right: 20px;
+.login-formfield {
+  padding-left: 20px;
 }
  
+.help-block {
+  padding-left: 20px;
+}
+
 .login-failed{
     text-align: center;
     margin: auto;
